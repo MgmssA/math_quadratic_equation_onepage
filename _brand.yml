@@ -36,6 +36,15 @@ color:
         gray-shade-8: "#333333"
         gray-shade-9: "#191919"
         blue: "#4d8ac2"
+        blue-shade-1: "#457cae"
+        blue-shade-2: "#3d6e9b"
+        blue-shade-3: "#356087"
+        blue-shade-4: "#2e5274"
+        blue-shade-5: "#264561"
+        blue-shade-6: "#1e374d"
+        blue-shade-7: "#17293a"
+        blue-shade-8: "#0f1b26"
+        blue-shade-9: "#070d13"
         # Purple
         purple: "#AF51E7"
         purple-shade-1: "#9d48cf"
@@ -76,10 +85,10 @@ color:
     primary: gray-shade-8 # The primary accent color, used for hyperlinks, active states, and primary action buttons.
     secondary: ivory-shade-7 # The secondary accent color, often used for lighter text or disabled states.
     tertiary: gray-shade-7 # The tertiary accent color, used for hover states, accents, and wells.
-    success: green-shade-3 # The color used for positive or successful actions and information.
-    info: "#356087" # The color used for neutral or informational actions and information.
-    warning: "#572873" # The color used for warning or cautionary actions and information.
-    danger: yellow-shade-5 # The color used for errors, dangerous actions, or negative information.
+    success: green-shade-5 # The color used for positive or successful actions and information.
+    info: blue-shade-6 # The color used for neutral or informational actions and information.
+    warning: purple-shade-6 # The color used for warning or cautionary actions and information.
+    danger: yellow-shade-6 # The color used for errors, dangerous actions, or negative information.
 
 typography:
     fonts: 
