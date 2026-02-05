@@ -1,0 +1,235 @@
+{{< include _includes/_front_matter.qmd >}}
+{{< include _includes/_init_fontawesome.qmd >}} 
+{{< include _includes/_katex_macros.qmd >}} 
+{{< include _includes/_r_themes.qmd >}}
+
+## Row
+
+::: {.card title="Allgemeine Form" fill="false" .text-success .text-bg-success .bg-opacity-10}
+
+$$
+ax^2 + bx + c = 0
+$$
+
+Koeffizienten: $a$, $b$, $c$
+
+Streckfaktor: $a$
+
+:::
+
+::: {.card title="Normalform" fill="false" .text-info .text-bg-info .bg-opacity-10}
+
+$$
+x^2 + px + q = 0
+$$
+
+Koeffizienten: $p$, $q$
+
+:::
+
+::: {.card title="Nullstellenform" fill="false" .text-warning .text-bg-warning .bg-opacity-10}
+
+$$
+a \cdot (x - x_1) \cdot (x - x_2) = 0
+$$
+
+Nullstellen: $x_1$, $x_2$
+
+Streckfaktor: $a$
+
+:::
+
+## Row
+
+::: {.card title="Varianten" fill="false" .text-success .text-bg-success .bg-opacity-10}
+
+Quadratische
+
+| $a$ | $b$ | $c$ | Gleichung |
+|---- |---- |---- |---- |
+| $\neq 0$ | $=0$ | $=0$ | $ax^2 = 0$ |
+| $\neq 0$ | $=0$ | $\neq 0$ | $ax^2 + c = 0$ |
+| $\neq 0$ | $\neq 0$ | $=0$ | $ax^2 + bx = 0$ |
+: {.light .text-success}
+
+Lineare
+
+| $a$ | $b$ | $c$ | Gleichung |
+|---- |---- |---- |---- |
+| $=0$ | $=0$ | $\neq 0$ | $c = 0$, Falsch! |
+| $=0$ | $\neq 0$ | $=0$ | $bx = 0$ |
+| $=0$ | $\neq 0$ | $\neq 0$ | $bx + c = 0$ |
+: {.light .text-success}
+
+:::
+
+::: {.card title="Varianten" fill="false" .text-info .text-bg-info .bg-opacity-10}
+
+Quadratische
+
+| $p$ | $q$ | Gleichung |
+|---- |---- |---- |
+| $=0$ | $\neq 0$ | $x^2 + px = 0$ |
+| $\neq 0$ | $=0$ | $x^2 + q = 0$ |
+| $\neq 0$ | $\neq 0$ | $x^2 = 0$ |
+: {.light .text-info}
+
+:::
+
+::: {.card title="Varianten" fill="false" .text-warning .text-bg-warning .bg-opacity-10}
+
+Quadratische
+
+| $a$ | Gleichung |
+|---- |---- |
+| $=0$ | $0 = 0$ Trivial! |
+| $\neq 0$ | $a \cdot (x - x_1) \cdot (x - x_2) = 0$ |
+: {.light .text-warning}
+
+:::
+
+## Row
+
+::: {.card title="Umwandlung zur Normalform" fill="false" .text-success .text-bg-success .bg-opacity-10}
+
+Nur wenn $a \neq 0$
+
+$$
+\begin{align*}
+ax^2 + bx + c &= 0 \\
+x^2 + \frac{b}{a}x + \frac{c}{a} &= 0 \\
+x^2 + px + q &= 0 \\
+\end{align*}
+$$
+
+$$
+\implies p = \frac{b}{a}, \; q = \frac{c}{a}
+$$
+
+:::
+
+::: {.card title="Umwandlung zur Normalform" fill="false" .text-info .text-bg-info .bg-opacity-10}
+
+Ist schon normal!
+
+$$
+x^2 + px + q = 0
+$$
+
+:::
+
+::: {.card title="Umwandlung zur Normalform" fill="false" .text-warning .text-bg-warning .bg-opacity-10}
+
+Nur wenn $a \neq 0$
+$$
+\begin{align*}
+a \cdot (x - x_1) \cdot (x - x_2) &= 0 \\
+(x - x_1) \cdot (x - x_2) &= 0 \\
+x^2 - x_2 x - x_1 x + x_1 x_2 &= 0 \\
+x^2 - \left( x_1 + x_2 \right) x + x_1 x_2 &= 0 \\
+x^2 + px + q &= 0
+\end{align*}
+$$
+
+$$
+\implies p = - \left( x_1 + x_2 \right), \; q = x_1 x_2
+$$
+
+Das ist Vietas Satz!
+
+:::
+
+## Row
+
+::: {.card title="Umwandlung zur Allgemeinform" fill="false" .text-success .text-bg-success .bg-opacity-10}
+
+Ist schon allgemein!
+
+$$
+ax^2 + bx + c = 0
+$$
+
+:::
+
+::: {.card title="Umwandlung zur Allgemeinform" fill="false" .text-info .text-bg-info .bg-opacity-10}
+
+Nur wenn $a \neq 0$
+
+$$
+\begin{align*}
+x^2 + px + q &= 0 \\
+x^2 + \frac{b}{a}x + \frac{c}{a} &= 0 \\
+ax^2 + bx + c &= 0
+\end{align*}
+$$
+
+:::
+
+::: {.card title="Umwandlung zur Allgemeinform" fill="false" .text-warning .text-bg-warning .bg-opacity-10}
+
+Nur wenn $a \neq 0$
+$$
+\begin{align*}
+a \cdot (x - x_1) \cdot (x - x_2) &= 0 \\
+a \cdot \left[ (x - x_1) \cdot (x - x_2) \right] &= 0 \\
+a \cdot \left[ x^2 - x_2 x - x_1 x + x_1 x_2 \right] &= 0 \\
+a \cdot \left[ x^2 - \left( x_1 + x_2 \right) x + x_1 x_2 \right] &= 0 \\
+a \cdot \left( x^2 + px + q \right) &= 0 \\
+a \cdot \left( x^2 + \frac{b}{a}x + \frac{c}{a} \right) &= 0 \\
+ax^2 + bx + c &= 0
+\end{align*}
+$$
+
+:::
+
+## Row
+
+::: {.card title="Beziehungen und Umwandlungen" fill="false" .text-danger .text-bg-background .bg-opacity-10}
+
+Es ist nur der Hinweg zur Normalform gezeigt. Der Rückweg ist auch möglich, wenn alle mathematischen Schritte umgekehrt ablaufen.
+
+```{mermaid}
+%%| fig-responsive: true
+
+flowchart TD
+    classDef text_success shape:rounded,color:#3f6d3c;
+    classDef text_info shape:rounded,color:#356087;
+    classDef text_warning shape:rounded,color:#8c40b8;
+    classDef text_danger shape:rounded,color:#6c7028;
+    classDef empty height:0,width:0;
+
+    General("$$ax^2+bx+c=0$$"):::text_success
+    GeneralAoutBC("$$a\left(x^2+\frac{b}{a}x+\frac{c}{a}\right)=0$$"):::text_success
+    GeneralA("$$ax^2=0$$"):::text_success
+    GeneralAC("$$ax^2+c=0$$"):::text_success
+    GeneralAB("$$ax^2+bx=0$$"):::text_success
+    NormalABC("$$x^2+\frac{b}{a}x+\frac{c}{a}=0$$"):::text_success
+    
+    NormalPQ("$$x^2+px+q=0$$"):::text_info
+    
+    GeneralLinearRoots("$$a \cdot (x - x_1) \cdot (x - x_2) = 0$$"):::text_warning
+    GeneralRoots("$$a \cdot \left[ x^2 - \left( x_1 + x_2 \right) x + x_1 x_2 \right] = 0$$"):::text_warning
+    NormalLinearRoots("$$(x - x_1) \cdot (x - x_2) = 0$$"):::text_warning
+    NormalRoots("$$x^2 - \left( x_1 + x_2 \right) x + x_1 x_2 = 0$$"):::text_warning
+
+    GeneralLinearRoots -->|"<p>$$\;\textcolor{#6c7028}{\cdot\frac{1}{a}}\;$$</p>"| NormalLinearRoots
+    NormalLinearRoots -->|Distributivgesetz| NormalRoots
+    NormalRoots -->|"<p>$$\;\textcolor{#6c7028}{p=-(x_1+x_2),\;q=x_1 x_2}\;$$</p>"| NormalPQ
+    NormalRoots -->|"<p>$$\;\textcolor{#6c7028}{\frac{b}{a}=-(x_1+x_2),\;\frac{c}{a}=x_1 x_2}\;$$</p>"| NormalABC
+    
+    GeneralLinearRoots -->|Distributivgesetz| GeneralRoots
+    GeneralRoots -->|"<p>$$\;\textcolor{#6c7028}{\frac{b}{a}=-(x_1+x_2),\;\frac{c}{a}=x_1 x_2}\;$$</p>"| GeneralAoutBC
+    GeneralAoutBC -->|Distributivgesetz| General
+
+    General -->|"<p>$$\;\textcolor{#6c7028}{b=0,\;c=0}\;$$</p>"| GeneralA
+    General -->|"<p>$$\;\textcolor{#6c7028}{b=0}\;$$</p>"| GeneralAC
+    General -->|"<p>$$\;\textcolor{#6c7028}{c=0}\;$$</p>"| GeneralAB
+
+    General -->|"<p>$$\;\textcolor{#6c7028}{\cdot\frac{1}{a}}\;$$</p>"| NormalABC
+    NormalABC -->|"<p>$$\;\textcolor{#6c7028}{p=\frac{b}{a},\;q=\frac{c}{a}}\;$$</p>"| NormalPQ
+
+    linkStyle 0,1,2,3,4,5,6,7,8,9,10,11 stroke-width:3px;
+```
+
+:::
+

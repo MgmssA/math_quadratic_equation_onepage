@@ -1,0 +1,35 @@
+/* Theme */
+.navbar-title-text {
+    font-family: 'Oxanium' !important;
+}
+
+.card-title {
+    font-family: 'Oxanium' !important;
+}
+
+/* Math */
+.katex {
+    font-size: 1.2em; 
+}
+
+/* Mermaid */
+.nodeLabel .katex {
+    font-size: 1.2em; 
+}
+
+.edgeLabel .katex {
+    font-size: 1em; 
+}
+
+:root {
+  /* --mermaid-bg-color: #{$mermaid-bg-color}; */
+  --mermaid-edge-color: #6c7028;
+  /* --mermaid-fg-color: #{$mermaid-fg-color}; */
+  /* --mermaid-fg-color--lighter: #{$mermaid-fg-color--lighter}; */
+  /* --mermaid-fg-color--lightest: #{$mermaid-fg-color--lightest}; */
+  --mermaid-font-family: "Asap";
+  --mermaid-label-bg-color: #61615c;
+  --mermaid-label-fg-color: #6c7028;
+  --mermaid-node-bg-color: #F4F4E7;
+  --mermaid-node-fg-color: #F4F4E7;
+}
